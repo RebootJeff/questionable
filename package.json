@@ -1,0 +1,25 @@
+{
+  "name": "questionable",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "echo \"write some tests!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RebootJeff/questionable.git"
+  },
+  "author": "@rebootjeff",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RebootJeff/questionable/issues"
+  },
+  "homepage": "https://github.com/RebootJeff/questionable",
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "webpack": "^1.12.11"
+  }
+}
