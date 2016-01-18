@@ -1,17 +1,17 @@
-var path = require('path');
 
 module.exports = {
-  entry: './app.js',
+  entry: './index.js',
   output: {
     path: __dirname,
     filename: 'bundle.js'
   },
+  parser: "babel-eslint",
   module: {
     loaders: [{
       loader: 'babel-loader',
       exclude: /node_modules/,
       query: {
-        presets: ['es2015']
+        presets: ['es2015', 'react']
       }
     }]
   },

@@ -1,4 +1,8 @@
 module.exports = {
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
   "rules": {
     "comma-dangle": [
       2,
@@ -6,7 +10,7 @@ module.exports = {
     ],
     "indent": [
       2,
-      4
+      2
     ],
     "quotes": [
       2,
@@ -22,8 +26,9 @@ module.exports = {
     ]
   },
   "env": {
+    "browser": true,
     "es6": true,
-    "browser": true
+    "node": true
   },
   "extends": "eslint:recommended"
 };
