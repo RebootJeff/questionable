@@ -1,20 +1,16 @@
 import React from 'react';
 
 
-const QuestionControls = React.createClass({
+const QuestionControls = (props) => {
+  let changeToNextQuestion = props.onNext;
 
-  render() {
-    let changeToNextQuestion = this.props.onNext;
-
-    return (
-      <div className="question-controls">
-        <button type="button" className="">Help!</button>
-        <button type="button" className="" onClick={changeToNextQuestion}>Next</button>
-      </div>
-    );
-  }
-
-});
+  return (
+    <div className="question-controls">
+      <button type="button" className="">Help!</button>
+      <button type="button" className="" onClick={changeToNextQuestion}>Next</button>
+    </div>
+  );
+};
 
 
 export default QuestionControls;
