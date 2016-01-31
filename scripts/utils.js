@@ -1,5 +1,3 @@
-import R from 'ramda';
-
 let Utils = {};
 
 Utils.shuffle = (array) => {
@@ -7,13 +5,13 @@ Utils.shuffle = (array) => {
   let randomIndex;
   let temp;
 
-  R.forEach((element, index) => {
+  array.forEach((element, index) => {
     shuffled.push(element);
     randomIndex = Utils.getRandomInteger(0, index);
     temp = shuffled[randomIndex];
     shuffled[randomIndex] = shuffled[index];
     shuffled[index] = temp;
-  }, array);
+  });
 
   return shuffled;
 };
